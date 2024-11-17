@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+       
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script defer src="signup.js"></script> 
+    <style>
+        
+        body {
+    background-image: url("pixelcut-export\ \(4\).jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: linear-gradient(rgba(75, 110, 153, 0.388), rgba(27, 27, 104, 0.557));
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    display: inline-block;
+    color: azure;
+    font-size: 35px;
+    padding-left: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+
+#div2 {
+    float: right;
+    margin-top: 40px;
+    padding-right: 10px;
+    word-spacing: 20px;
+    font-size: 20px;
+
+}
+
+main {
+    border: white;
+    float: right;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(5, 6, 6, 0.347);
+    margin-top: 40px;
+    margin-right: 180px;
+    width: fit-content;
+    color: azure;
+}
+
+#footer {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 800px;
+    background-color: rgba(245, 245, 220, 0.342);
+    text-align: center;
+    color: azure;
+}
+
+#signup {
+    width: 280px;
+}
+a:hover{
+    color: rgb(193, 144, 144);
+}
+    </style>
+</head>
+
+<body>
+   
+    <header>
+        <div id="div1">
+            <h1>Electro sports</h1>
+            <div id="div2">
+                <form id="myform"<h3>Backtohome</h3> <action="Home.html">
+                   
+        </div>
+    </header>
+
+    <main>
+       
+        <div id="signup">
+            <div>
+                <form id="myform" action="home.html">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" onkeyup="validdateName()" required>
+                    <div class="message" id="namemessage"></div>
+            
+                <h2><i class="fa-solid fa-user"></i>&nbsp; Sign_up</h2>
+            </div>
+            <form id="signup-form">
+                <div>
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" placeholder="Enter your first name" required>
+                </div><br>
+                <div>
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" placeholder="Enter your last name" required>
+                </div><br>
+                <div>
+                    <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="email" id="email" placeholder="Enter your email id" required>
+                </div><br>
+                <div>
+                    <label for="phone">Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="tel" id="phone" placeholder="Enter your mobile num" required>
+                </div><br>
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" id="male" value="Male" required> Male
+                    <input type="radio" name="gender" id="female" value="Female"> Female
+                </div><br>
+                <div>
+                    <label for="region">Region:</label>
+                    <select id="region" required>
+                        <option value="">Select</option>
+                        <option value="India">India</option>
+                        <option value="America">America</option>
+                        <option value="China">China</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Russia">Russia</option>
+                        <option value="U.K">U.K</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Antarctica">Antarctica</option>
+                    </select>
+                </div><br>
+                <div>
+                    <label for="city">City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="city" placeholder="Enter your city" required>
+                </div><br>
+                <div>
+                    <label for="address">Address:</label>
+                    <textarea id="address" placeholder="Enter your address" required></textarea>
+                </div><br>
+                <div>
+                    <input type="checkbox" id="terms" required> Agree to all the terms and conditions
+                </div><br>
+                <div>
+                    <button type="submit">Sign up!!</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div id="footer">
+        <p>&copy all rights reserved</p>
+    </div>
+</body>
+
+</html>

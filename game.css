@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Heading */
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  /* Image grid container with 3 images per row */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 images per row */
+    gap: 20px; /* Space between images */
+    padding: 20px;
+    justify-items: center; /* Center items horizontally */
+  }
+  
+  /* Individual image item container */
+  .image-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Image styling */
+  .image-item img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto;
+    border-bottom: 4px solid #333;
+  }
+  
+  /* Title Styling */
+  .image-item h3 {
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Description Styling */
+  .image-item p {
+    font-size: 1em;
+    padding: 10px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  /* Hover effects */
+  .image-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-item:hover h3 {
+    background-color: #555;
+  }
+  
+  /* Theory Section */
+  .theory {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .theory h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .theory p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 images per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* 1 image per row on small screens */
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  }
+  

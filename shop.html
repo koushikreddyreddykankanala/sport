@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Shop - Clothes and Accessories</title>
+    <link rel="stylesheet" href="shop.css">
+    <style>
+        
+        .filter-btn {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .filter-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="page-title">Shop Sports Clothing & Accessories</h1>
+    
+    
+    <div class="filter-buttons">
+        <button class="filter-btn" onclick="filterItems('all')">All</button>
+        <button class="filter-btn" onclick="filterItems('clothing')">Clothing</button>
+        <button class="filter-btn" onclick="filterItems('bats')">Bats</button>
+        <button class="filter-btn" onclick="filterItems('balls')">Balls</button>
+        <button class="filter-btn" onclick="filterItems('tennis')">Tennis</button>
+        <button class="filter-btn" onclick="filterItems('accessories')">Accessories</button>
+    </div>
+
+    
+    <div class="shop-gallery">
+        
+        <div class="shop-item" data-category="clothing">
+            <img src="sport shirt.jpeg" alt="Sport Shirt">
+            <h3>Sport Shirt</h3>
+            <p>RS.449</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        <div class="shop-item" data-category="clothing">
+            <img src="running short.jpeg" alt="Running Shorts">
+            <h3>Running Shorts</h3>
+            <p>RS.399</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        
+        <div class="shop-item" data-category="bats">
+            <img src="bat.jpeg" alt="Cricket Bat">
+            <h3>Cricket Bat</h3>
+            <p>RS.2000</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        <div class="shop-item" data-category="bats">
+            <img src="baseball bat..jpeg" alt="Baseball Bat">
+            <h3>Baseball Bat</h3>
+            <p>RS.1000</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        
+        <div class="shop-item" data-category="balls">
+            <img src="soccerball.jpeg" alt="Soccer Ball">
+            <h3>Soccer Ball</h3>
+            <p>RS.900</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        <div class="shop-item" data-category="balls">
+            <img src="baseketball.jpeg" alt="Basketball">
+            <h3>Basketball</h3>
+            <p>RS.799</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        
+        <div class="shop-item" data-category="tennis">
+            <img src="tennis racket.jpeg" alt="Tennis Racket">
+            <h3>Tennis Racket</h3>
+            <p>RS.1099</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        <div class="shop-item" data-category="tennis">
+            <img src="tennis ball.jpeg" alt="Tennis Balls">
+            <h3>Tennis Balls (Pack of 3)</h3>
+            <p>RS.199</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        
+        <div class="shop-item" data-category="accessories">
+            <img src="gym bag.jpeg" alt="Gym Bag">
+            <h3>Gym Bag</h3>
+            <p>RS.149</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        <div class="shop-item" data-category="accessories">
+            <img src="gloves.jpeg" alt="Sports Gloves">
+            <h3>Sports Gloves</h3>
+            <p>RS.460</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        <div class="shop-item" data-category="accessories">
+            <img src="resistance band.jpeg" alt="Resistance Band">
+            <h3>Resistance Band</h3>
+            <p>RS.299</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        
+        <div class="shop-item" data-category="accessories">
+            <img src="yogamat.jpeg" alt="Yoga Mat">
+            <h3>Yoga Mat</h3>
+            <p>RS.799</p>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+
+    
+</body>
+</html>
